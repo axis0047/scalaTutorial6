@@ -29,8 +29,6 @@ object Question1 {
             case 0 => decrypt(word,shift)
             case 1 => encrypt(word,shift)
         }
-
-        println(caeserCipher("AABB"))
         
     }
 }
