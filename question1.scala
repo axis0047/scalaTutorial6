@@ -25,10 +25,7 @@ object Question1 {
             }
         })
 
-        def caeserCipher(word:String,method:Int = 1,shift:Int = 1) = method match{
-            case 0 => decrypt(word,shift)
-            case 1 => encrypt(word,shift)
-        }
+        def caeserCipher(f:(String,Int)=>String,word:String,n:Int) = f(word,n)        
         
     }
 }
